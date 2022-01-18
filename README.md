@@ -7,7 +7,7 @@ If you want to see the demo of this proyect deployed, you can visit [here](https
 
 ## Preview
 
-![website Screenshot](https://github.com/santiagosg/Live-Nature/blob/main/img/card-LiveNature-w570.jpg)  
+![website Screenshot](https://github.com/santiagosg/Live-Nature/blob/main/assets/img/card-LiveNature-w570.jpg)  
 
 ## Built with
 
