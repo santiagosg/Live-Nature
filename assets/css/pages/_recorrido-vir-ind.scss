@@ -1,0 +1,267 @@
+.container-rec-virtual-ind {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  /* Background */
+  background-color: var(--color-primary-1);
+  background: url("../img/bg-recvirtual-large.jpg") center center / cover
+    no-repeat;
+
+  @include respond(phone) {
+    background: url("../img/bg-recvirtual-small.jpg") center center / cover
+      no-repeat;
+  }
+
+  &__content {
+  }
+
+  &__audio {
+    position: relative;
+    top: 60px;
+    left: 20px;
+    height: 28px;
+    box-shadow: 0 2px 5px rgba(#323232, 0.7);
+    border-radius: 0.938rem;
+    filter: sepia(1) hue-rotate(176deg);
+
+    @include respond(phone) {
+      position: absolute !important;
+      width: 60%;
+      height: 25px;
+      bottom: 100px !important;
+      top: unset;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    @include respond(phone-min) {
+      width: 70%;
+    }
+  }
+}
+
+/* RESPONSIVE IMAGEN DE FONDO DE SLIDE */
+@media only screen and (min-width: 479px) {
+  .ocultar-up-phone {
+    display: none !important;
+  }
+  .ocultar-down-phone {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  .ocultar-up-phone {
+    display: block !important;
+  }
+  .ocultar-down-phone {
+    display: none !important;
+  }
+}
+
+/* VIDEO EN CONTAIN EN MOBILE */
+.video-mobile-contain .html5vid.fullcoveredvideo {
+  @include respond(phone) {
+    backdrop-filter: blur(2px) !important;
+  }
+}
+.video-mobile-contain video.resizelistener {
+  @include respond(phone) {
+    width: 100% !important;
+    height: auto !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
+  }
+}
+
+/* ESTILOS TOOLTIP */
+.openbulb {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.closebulb {
+  position: absolute;
+  top: 55px;
+  left: 410px;
+}
+.descriptionbulb {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  background-color: aquamarine;
+  padding: 10px 25px;
+}
+p.descriptionbulb__text {
+  text-align: justify;
+  font-size: 0.813rem; // 13px
+  line-height: 1.063rem; //17px
+  font-family: "SohoGothicPro-Light", sans-serif;
+  overflow: hidden;
+}
+
+// html
+/*<!-- TOOLTIP -->
+<div class="tp-caption openbulb">
+    <img src="assets/img/icon-light-bulb.svg" alt="Icono Bombillo"
+        class="recorrido-vir__icon-tooltip">
+</div>
+<div class="tp-caption closebulb">
+    <img src="assets/img/icon-light-bulb.svg" alt="Icono Bombillo"
+        class="recorrido-vir__icon-tooltip">
+</div>
+<div class="tp-caption descriptionbulb">
+    <p class="descriptionbulb__text">Para esta inducción en específico les brindaremos información sobre la Subestación Popayán la cual cuenta con los tres niveles de tensión 115/34.5/13.2 KV. <br>Utiliza la galería de fotos que se encuentra en la parte inferior para conocer y visitar cada segmento. </div></p>
+</div>*/
+/* Fin estilos tooltip */
+
+.recorrido-vir__slide {
+  position: relative;
+}
+
+/* icon tooltip */
+.recorrido-vir__icon-tooltip {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  z-index: 99;
+  width: 30px !important;
+  height: 30px !important;
+
+  @include respond(tab-port) {
+    
+  }
+  @include respond(phone) {
+    
+  }
+}
+
+.tp-caption.tooltip-Textblock,
+.tooltip-Textblock {
+  font-family: "SohoGothicPro-Light", sans-serif;
+
+  z-index: 18;
+  min-width: 490px;
+  max-width: 490px;
+  white-space: normal;
+  text-transform: left;
+
+  background-color: var(--color-primary-1);
+  border-color: transparent;
+  border-radius: 0 0 0 0;
+  border-style: none;
+  border-width: 0;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 15px 25px;
+  text-decoration: none;
+
+  @include respond(tab-port) {
+    padding: 20px 25px 15px 25px !important;
+  }
+}
+
+.tooltip-open {
+  z-index: 19 !important;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-family: Raleway;
+  text-transform: left;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 1px;
+
+  width: 32px;
+  height: 32px;
+  transform: translateY(-15px) translateX(120px) !important;
+}
+
+.tooltip-close {
+  z-index: 19 !important;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-family: Raleway;
+  text-transform: left;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 1px;
+
+  width: 32px;
+  height: 32px;
+  transform: translateY(-15px) translateX(120px) !important;
+}
+
+.tooltip-Textblock__resaltado {
+  color: var(--color-yellow-1);
+  font-family: "SohoGothicPro-Medium";
+  font-size: 0.906rem !important; // 14.5px
+  line-height: 1.063rem !important; //17px
+
+  @include respond(phone) {
+    font-size: 0.75rem !important; // 12px
+    line-height: 1.063rem !important; //17px
+  }
+}
+
+// Posición vertical del tooltip completo
+.container-rec-virtual-ind .tp-parallax-wrap {
+  top: 150px !important;
+}
+
+/* Funcion tooltip close */
+.tooltip-open .tooltip-close:target ~ .tooltip-Textblock {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* ESTILO FONDO (SIN FONDO BLANCO) */
+.tp-shadowcover {
+  background: none;
+  background-color: transparent !important;
+}
+
+.rev_slider_wrapper.fullwidthbanner-container {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+.tp-shadow5:after,
+.tp-shadow5:before {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+/* RESPONSIVE */
+.fullwidthbanner-container .fullwidthabanner {
+  height: 99.9% !important;
+}
+
+.container-rec-virtual-ind
+  .rev_slider
+  li.tp-revslider-slidesli.active-revslide {
+  @include respond(phone) {
+    width: 100% ​ !important;
+  }
+}
