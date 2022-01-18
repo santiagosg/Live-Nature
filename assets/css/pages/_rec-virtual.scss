@@ -1,0 +1,287 @@
+.container-rec-virtual {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  /* Background */
+  background-color: var(--color-primary-1);
+  background: url("../img/bg-recvirtual-large.jpg") center center / cover
+    no-repeat;
+
+  @include respond(phone) {
+    background: url("../img/bg-recvirtual-small.jpg") center center / cover
+      no-repeat;
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* ZONA FLECHA */
+  &__container-arrow {
+    max-width: 1920px;
+    width: 85%;
+  }
+
+  &__img-arrow {
+    max-width: 1800px;
+    width: 100%;
+  }
+
+  /* ZONA ICONOS */
+  &__container-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__content-icon {
+    flex: 0 0 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      flex: 0 0 40%;
+    }
+  }
+  &__img-icon {
+    width: 4rem; //
+    height: 4rem; //
+
+    @include respond(tab-port) {
+      width: 2.938rem;
+      height: 2.938rem;
+    }
+  }
+
+  &__description-icon {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    font-family: "SohoGothicPro-Light", sans-serif;
+
+    @include respond(tab-land) {
+      font-size: 1.125rem; // 18px
+      line-height: 1.125rem;
+    }
+
+    @include respond(phone) {
+      font-size: 0.875rem;
+      line-height: 0.875rem;
+    }
+  }
+
+  /* Enlaces a recorridos virtuales */
+  &__enlace-menu {
+    color: var(--color-white-1);
+    text-decoration: none;
+  }
+}
+
+/* ESTILO A ELEMENTOS DEL CAROUSEL DE SLIDER REVOLUTION */
+.rev_slider_wrapper.fullwidthbanner-container {
+  background: none;
+}
+
+.tp-bgimg {
+  background-position: top center !important;
+  max-height: 260px;
+}
+
+.container-rec-virtual li.tp-revslider-slidesli.active-revslide {
+  @include respond(phone) {
+    width: 85% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* REVOLUTION LAYERS STYLES */
+.tp-caption.FoodCarousel-Content,
+.FoodCarousel-Content {
+  color: rgba(41, 46, 49, 1);
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Raleway;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(41, 46, 49, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 0 0 0px;
+}
+
+/* BOTONES */
+.tp-caption.FoodCarousel-Button,
+.FoodCarousel-Button {
+  color: var(--color-white-1);
+  font-family: "SohoGothicPro-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: Raleway;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+  letter-spacing: 1px;
+
+  background-color: var(--color-tertiary-1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+
+
+.tp-caption.FoodCarousel-Button:hover,
+.FoodCarousel-Button:hover {
+  color: var(--color-white-1);
+  text-decoration: none;
+  background: none;
+  background-color: var(--color-tertiary-1) !important;
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+  cursor: pointer;
+
+  transform: translateY(-3px) !important;
+}
+
+.tp-parallax-wrap {
+  top: 265px !important;
+}
+
+/* TITULO CON ENLACE */
+.tp-caption.FoodCarousel-Button,
+.FoodCarousel-Button {
+  @include respond(phone) {
+    top: -50px !important;
+    left: -50px !important;
+  }
+
+  @include respond(phone-min) {
+    top: -130px !important;
+  }
+}
+
+/* TEXTOS */
+.foodcarousel-headline {
+  font-weight: 800 !important;
+}
+
+.FoodCarousel-Content a,
+.FoodCarousel-Content a:visited {
+  color: #89c400 !important;
+  text-decoration: underline !important;
+}
+
+.FoodCarousel-Content a:hover {
+  color: #3a2d58 !important;
+}
+
+/* FLECHAS */
+#rev_slider_41_1 .metis.tparrows {
+  display: block;
+  background: rgba(196, 196, 196, 0.2);
+  padding: 10px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+#rev_slider_41_1 .metis.tparrows:hover {
+  background: rgba(var(--color-gray-1), 1);
+}
+
+#rev_slider_41_1 .metis.tparrows:before {
+  color: rgba(225, 225, 225, 0.6);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+#rev_slider_41_1 .metis.tparrows:hover:before {
+  transform: scale(1.5);
+}
+
+/* MINIATURAS */
+.erinyen .tp-thumb {
+  opacity: 1;
+}
+
+.erinyen .tp-thumb-over {
+  background: rgba(233, 233, 233, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.erinyen .tp-thumb-more:before {
+  font-family: "revicons";
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  display: block;
+  line-height: 15px;
+  text-align: left;
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.erinyen .tp-thumb-more:before {
+  content: "\e825";
+}
+
+.erinyen .tp-thumb-title {
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  display: block;
+  line-height: 15px;
+  text-align: left;
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  padding: 20px 35px 20px 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  font-weight: 500;
+}
+
+.erinyen .tp-thumb.selected .tp-thumb-more:before,
+.erinyen .tp-thumb:hover .tp-thumb-more:before {
+  color: rgb(170, 170, 170);
+}
+
+.erinyen .tp-thumb.selected .tp-thumb-over,
+.erinyen .tp-thumb:hover .tp-thumb-over {
+  background: rgb(255, 255, 255);
+}
+
+.erinyen .tp-thumb.selected .tp-thumb-title,
+.erinyen .tp-thumb:hover .tp-thumb-title {
+  color: rgb(0, 0, 0);
+}
