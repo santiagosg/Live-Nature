@@ -1,0 +1,52 @@
+// RESET
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html,
+body {
+  /*overflow: auto;*/
+}
+
+// FUENTES
+@font-face {
+  font-family: "SohoGothicPro-Bold";
+  src: url(../fonts/SohoGothicPro-Bold.eot);  /* IE9*/
+  src: url(../fonts/SohoGothicPro-Bold.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+    url(../fonts/SohoGothicPro-Bold.woff) format("woff"), /* chrome、firefox */
+    url(../fonts/SohoGothicPro-Bold.ttf) format("truetype"),  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url(../fonts/SohoGothicPro-Bold.svg#SohoGothicPro-Bold) format("svg");  /* iOS 4.1- */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SohoGothicPro-Light";
+  src: url(../fonts/SohoGothicPro-Light.eot);  /* IE9*/
+  src: url(../fonts/SohoGothicPro-Light.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+    url(../fonts/SohoGothicPro-Light.woff) format("woff"), /* chrome、firefox */
+    url(../fonts/SohoGothicPro-Light.ttf) format("truetype"),  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url(../fonts/SohoGothicPro-Light.svg#SohoGothicPro-Light) format("svg");  /* iOS 4.1- */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SohoGothicPro-Medium";
+  src: url(../fonts/SohoGothicPro-Medium.eot);  /* IE9*/
+  src: url(../fonts/SohoGothicPro-Medium.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+    url(../fonts/SohoGothicPro-Medium.woff) format("woff"), /* chrome、firefox */
+    url(../fonts/SohoGothicPro-Medium.ttf) format("truetype"),  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url(../fonts/SohoGothicPro-Medium.svg#SohoGothicPro-Medium) format("svg");  /* iOS 4.1- */
+  font-weight: normal;
+  font-style: normal;
+}

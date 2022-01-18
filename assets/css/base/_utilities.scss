@@ -1,0 +1,68 @@
+// Utilidades margenes
+.u-margin-bottom-small {
+  margin-bottom: 0.813rem !important; // 13px
+
+  @include respond(tab-port) {
+    margin-bottom: 0.563rem !important; // 9px
+  }
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 1.938rem !important; // 31px
+
+  @include respond(tab-land) {
+    margin-bottom: 1.188rem !important; // 19px
+  }
+
+  @include respond(tab-port) {
+    margin-bottom: 0.875rem !important; // 14px 
+  }
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 3.625rem !important; // 58px
+
+  @include respond(tab-land) {
+    margin-bottom: 2.438rem !important; // 39px
+  }
+
+  @include respond(tab-port) {
+    margin-bottom: 1.938rem !important; // 31px
+  }
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 8rem !important; // 128
+}
+
+.u-margin-top-small {
+  margin-bottom: 0.563rem !important; // 9px
+}
+
+.u-margin-top-medium {
+  margin-top: 1.938rem !important; // 31px
+
+  @include respond(tab-land) {
+    margin-top: 1.188rem !important; // 19px
+  }
+
+  @include respond(tab-port) {
+    margin-top: 0.875rem !important; // 14px
+  }
+}
+
+.u-margin-top-big {
+  margin-top: 3.625rem !important; // 58px
+
+  @include respond(tab-land) {
+    margin-top: 2.438rem !important; // 39px
+  }
+
+  @include respond(tab-port) {
+    margin-top: 1.938rem !important; // 31px
+  }
+}
+
+.u-margin-top-huge {
+  margin-top: 8rem !important; // 128
+}

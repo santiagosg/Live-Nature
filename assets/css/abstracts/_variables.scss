@@ -1,0 +1,19 @@
+// VARIABLES
+
+:root {
+    --color-primary-1: #3b6945;
+    --color-primary-2: #65B577;
+    --color-secundary-1: #42754D;
+    --color-tertiary-1: #63d97d;
+    --color-white-1: #fff;
+    --color-gray-1: #bdbdc3;
+    --color-purple-1: #96489C;
+    --color-yellow-1: #89F5A0; // Yellow
+}
+
+// VARIABLES PARA MEDIA QUERYS
+$bp-largest: 75em;          //1200px
+$bp-large: 68.75em;         //1100px
+$bp-medium: 56.25em;        //900px
+$bp-small: 37.5em;          //600px
+$bp-smallest: 31.25em;         //500px

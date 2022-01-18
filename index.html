@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE SHEETS - FAVICON -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo-white-1x.png" type="image/png">
+
+    <title>Live Nature | Recorrido Virtual</title>
+</head>
+
+<body>
+    <!-- Main content -->
+    <div class="container-home">
+        <img src="assets/img/logo-white-1x.png" alt="" class="container-home__logo u-margin-bottom-medium">
+        <h1 href="#" class="container-home__titulo u-margin-bottom-small">Recorrido virtual</h1>
+        <p class="container-home__text u-margin-bottom-big">Visita de campo</p>
+        <a href="#" class="container-home__btn btn-purple btn u-margin-bottom-medium abrir-modal">Comencemos</a>
+    </div>
+
+    <!-- Modal con video introductorio -->
+    <div class="modal modal-close" id="modal--introduccion">
+        
+            <!-- Ícono cerrar a la derecha -->
+            <button class="modal__btn-close">
+                <div class="modal__btn-close__line modal__btn-close__line--first"></div>
+
+                <div class="modal__btn-close__line modal__btn-close__line--second"></div>
+            </button>
+        
+        <!-- Content -->
+        <!-- Video introductorio -->
+        <video id="myVideo" class="modal__video" src="assets/img/lorem-ipsum-dummy-video.mp4" controls preload="none">
+            <p>Su navegador no soporta tipo de video.</p>
+        </video>
+
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
